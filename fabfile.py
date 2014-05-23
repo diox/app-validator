@@ -13,10 +13,3 @@ os.environ['PYTHONPATH'] = os.pathsep.join([ROOT,
 
 local = functools.partial(local, capture=False)
 
-def test(pdb=False):
-    cmd = 'nosetests'
-
-    if pdb:
-        cmd += ' --pdb --pdb-failures -s'
-
-    local(cmd)
