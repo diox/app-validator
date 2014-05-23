@@ -1,6 +1,5 @@
 "Constants that will be used across files."
 
-import json
 import os
 import types
 
@@ -31,8 +30,8 @@ MAX_GARBAGE = 100 * 1024
 
 PERMISSIONS = {
     'web': set([
-        'geolocation', 'alarms', 'fmradio', 'desktop-notification', 'storage',
-        'audio-channel-normal', 'audio-channel-content'
+        'alarms', 'audio-channel-content', 'audio-channel-normal',
+        'desktop-notification', 'fmradio', 'geolocation', 'storage'
     ]),
     'privileged': set([
         'device-storage:pictures', 'device-storage:videos',
